@@ -1,0 +1,26 @@
+/*  //RHOMBUS PATTERN
+      ******
+     ******
+    ******      //COLUMN=>1." "=>n to 1-row number
+   ******                 2."*"=>1 to n
+  ******
+ ******
+******
+*/
+
+#include<iostream>
+using namespace std;
+int main(){
+    int i,j,n;
+    cin>>n;
+    for(i=0;i<=n;i++){
+        for(j=1;j<=n-i;j++){
+            cout<<" ";
+        }
+        for(j=1;j<=n;j++){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
